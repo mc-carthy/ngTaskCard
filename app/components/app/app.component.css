@@ -1,0 +1,21 @@
+.container {
+    padding-top: 3rem;
+}
+
+.row {
+    margin-bottom: 1.5rem;
+}
+
+form {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #009688;
+    border-color: #009688;
+    margin-left: 1rem;
+}
+
+.form-control:focus {
+    border-color: #009688;
+}

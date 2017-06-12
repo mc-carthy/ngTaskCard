@@ -10,12 +10,24 @@ form {
     text-align: center;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-primary:disabled:hover {
     background-color: #009688;
     border-color: #009688;
     margin-left: 1rem;
 }
 
+.btn-primary:hover {
+    background-color: #00796b;
+    border-color: #00796b
+}
+
 .form-control:focus {
     border-color: #009688;
+}
+
+.centered {
+    color: #ccc;
+    text-align: center;
+    margin-top: 3rem;
 }

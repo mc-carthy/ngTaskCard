@@ -12,6 +12,12 @@
     text-align: right;
 }
 
+.card.completed,
+.card.completed .card-footer {
+    background-color: #eee;
+    color: #ccc;
+}
+
 i {
     padding-left: .5rem;
 }

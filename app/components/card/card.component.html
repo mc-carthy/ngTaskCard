@@ -1,15 +1,17 @@
 <div class="col-sm-3">
-    <div class="card">
+    <div class="card" (click)="statusToggle()" [class.completed]="task.completed">
         <div class="card-block">
             <p>{{ task.content }}</p>
         </div>
-        <div class="card-footer" *ngIf="!task.completed">
-            Not Complete
-            <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <div class="card-footer" *ngIf="task.completed">
-            Complete
-            <i class="fa fa-check" aria-hidden="true"></i>
+        <div class="card-footer">
+            <span *ngIf="!task.completed">
+                Not Complete
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <span *ngIf="task.completed">
+                Complete
+                <i class="fa fa-check" aria-hidden="true"></i>
+            </span>
         </div>
     </div>
 </div>

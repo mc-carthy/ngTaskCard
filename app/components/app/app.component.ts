@@ -10,9 +10,15 @@ import { Task } from './../../models/task';
 
 export class AppComponent  {
 
-    task1: Task = {
-        content: "Test task",
-        completed: false
-    };
-    
+    private tasks = [
+        new Task(
+            "Basic task",
+            true
+        ),
+        new Task(
+            "Advanced task",
+            false
+        )
+    ];
+
 }

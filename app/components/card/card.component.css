@@ -13,6 +13,13 @@
 }
 
 i {
-    color: #cc0000;
     padding-left: .5rem;
+}
+
+.fa-times {
+    color: #cc0000;
+}
+
+.fa-check {
+    color: #00cc00;
 }

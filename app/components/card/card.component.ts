@@ -13,10 +13,16 @@ import { Task } from './../../models/task';
 export class CardComponent {
 
     @Input() task: Task;
+    private hidden: boolean = false;
 
     statusToggle()
     {
         this.task.completed = !this.task.completed;
+    }
+
+    hideCard()
+    {
+        this.hidden = true;
     }
 
 }

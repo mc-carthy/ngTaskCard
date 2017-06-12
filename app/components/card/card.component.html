@@ -1,6 +1,7 @@
-<div class="col-sm-3">
+<div class="col-sm-3" *ngIf="!hidden">
     <div class="card" (click)="statusToggle()" [class.completed]="task.completed">
         <div class="card-block">
+            <span><i class="fa fa-trash pull-right" (click)="hideCard()" aria-hidden="true"></i></span>
             <p>{{ task.content }}</p>
         </div>
         <div class="card-footer">

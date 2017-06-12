@@ -11,16 +11,7 @@ import { Task } from './../../models/task';
 
 export class AppComponent  {
 
-    private tasks = [
-        new Task(
-            "Basic task",
-            true
-        ),
-        new Task(
-            "Advanced task",
-            false
-        )
-    ];
+    private tasks: Task[] = [];
 
     private currentTask = new Task(null, false);
 

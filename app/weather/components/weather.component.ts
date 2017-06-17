@@ -74,9 +74,13 @@ export class WeatherComponent implements OnInit {
                 {
                     this.currentLocation = location["results"][1]["formatted_address"];
                 }
-                else
+                else if (location["results"][0])
                 {
                     this.currentLocation = location["results"][0]["formatted_address"];                    
+                }
+                else 
+                {
+                    this.currentLocation = "Not Found";
                 }
                 console.log(location); // TODO - Remove
             })
